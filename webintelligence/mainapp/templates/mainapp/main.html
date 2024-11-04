@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Академия развития интелекта</title>
+    <link type="text/css" href="{% static 'mainapp/css/main.css' %}" rel = "stylesheet" />
+</head>
+
+<body>
+
+    <div class="wrapper">  
+        <header class="container">
+            <nav>
+                <ul>
+                    <li class ="btn"><a href="{% url 'about' %}">О нас</a></li>
+                    <li class="btn"><a href="{% url 'programs' %}">Программы</a></li>
+                    <li class="btn"><a href="/Events.html">События</a></li>
+                    <li class="btn"><a href="/News.html">Новости</a></li>
+                    <li class="btn"><a href="/Blog.html">Блог</a></li>
+                    <li class="btn"><a href="/Franch.html">Франшиза </a></li>
+                    <li class="btn"><a href="/Contacts.html">Контакты</a></li>
+                    <li class="btn"><a href="#">Войти</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main class="Itcity">
+        <div class="hero-wrapper">
+            <div class="hero container">
+                <div class="hero--block">
+                    <div class="hero--info">
+                        <h2>Академия</h2>
+                        <h1>Развития Интелекта</h1>
+                        <p>Присоединяйтесь! Пробный урок - Бесплатно</p>   
+                        <button class="btn">ЗАПИСАТЬСЯ</button>    
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+        <div class="programs-wrapper">
+            <div id="programs" class="container">
+                <h3> Программы</h3>
+                <div class="flex">
+
+                    <div id="offline" class="courses-block">
+                        <div class="wrapper">
+                            <h4>ЗАНЯТИЯ В ЦЕНТРАХ</h4>
+                            <p>Классический формат занятий с использованием современных технологий </p>
+                        </div>
+                        
+                        <div class="button-wraper">
+                            <button class="btn">...Курсов</button> 
+                        </div>
+                    </div>
+
+                    <div id="online" class="courses-block">
+                        <div class="wrapper">
+                            <h4>ОНЛАЙН ОБУЧЕНИЕ</h4>
+                            <p>Индивидуальный и удобный для каждого темп обучения. Занимайтесь из дома на интерактивной платформе </p>
+                        </div> 
+
+                        <div class="button-wraper">
+                            <button class="btn">...Курсов</button> 
+                        </div>
+                    </div>
+
+                    <div id="ourclass" class="courses-block">
+                        <div class="wrapper">
+                            <h4>РЕПЕТИТОРЫ 1-11 КЛАСС</h4>
+                            <p>Индивидуальные занятия по школьной программе c репетиторами, подготовка к ОГЭ и ЕГЭ</p>
+                        </div>
+
+                        <div class="button-wraper">
+                            <button class="btn">...Курсов</button> 
+                        </div>   
+                    </div>
+
+                    <div id="tutoring" class="courses-block">
+                        <div class="wrapper">
+                            <h4>ЛОГОПЕДЫ</h4>
+                            <p>Подберем для вас индивидуального логопеда и организуем удобные онлайн-занятия с гарантией результата.</p>
+                        </div>
+
+                        <div class="button-wraper">
+                            <button class="btn">...Курсов</button> 
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper-info">
+            <div class="someinfo">
+                <h5>...СЕГОДНЯ - ЭТО: </h5>
+                <p>(подсчёт ведется в режиме реального времени)</p>
+            </div>    
+           
+            <div class="content">
+                <div class="column1">
+                    <img src="{% static 'mainapp/images/person.png' %}" alt="Прошедших обучение">
+                    <h6>...</h6>
+                    <p>Прошедших обучение</p>
+                </div>
+
+                <div class="column2">
+                    <img src="{% static 'mainapp/images/_LocationIcon_.png' %}" alt="Аттестованных педагогов">
+                    <h6>...</h6>
+                    <p>Аттестованных педагогов</p>
+                </div>
+
+                <div class="column3">
+                    <img src="{% static 'mainapp/images/_LightbulbIcon_.png' %}" alt="Стран">
+                    <h6>...</h6>
+                    <p>Стран</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="certificate">
+            <h7>Свидетельства и сертификаты</h7>
+            <div class="carousel">
+                <div class="carousel-item"></div>
+                <div class="carousel-item"></div>
+                <div class="carousel-item"></div>
+                <div class="carousel-item"></div>
+            </div>
+        </div>
+
+        <div class="wrapper-slide">
+            <div class="container-slide">
+                <h7 class="title">ИНТЕРЕСНОЕ В БЛОГЕ</h7>
+                <div class="slider">
+                <button class="slide-btn left-button">&larr;</button>
+                <div class="card-container">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+              <button class="slide-btn right-button">&rarr;</button>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">Logo</span>
+                <p> Все права на товарный знак защищены. 
+                    Копирование материалов без согласия авторов проекта запрещено ИП Васильева Татьяна Игоревна ИНН 860324040540
+                    ОГРН 312860329300037</p>
+            </div>
+            <div>  
+                <h4> 8 922 795 06 40</h4>
+                <ul>
+                    <li>Онлайн</li>
+                    <li>Академия</li>
+                    <li>Робототехника</li>
+                    <li>Летний лагерь</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Договр оферты</li>
+                    <li>Политика конфиденциальности</li>
+                    <li>Государственная лицензия</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p>Сайт разработан ITCLAN - Digital Agency</p>
+    </footer>
+</body>
+
+</html>
