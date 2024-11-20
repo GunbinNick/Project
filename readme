@@ -1,0 +1,13 @@
+для запуска сервера:
+  ~/Project │ main $ cd webintelligence
+  ~/Project/webintelligence │ main $ python3 manage.py runserver
+
+В данном выводе нажмите на http ссылку с прожатым Ctrl:
+  Watching for file changes with StatReloader
+  Performing system checks...
+  
+  System check identified no issues (0 silenced).
+  November 20, 2024 - 06:59:52
+  Django version 5.1.3, using settings 'webintelligence.settings'
+  Starting development server at http://127.0.0.1:8000/
+  Quit the server with CONTROL-C.
