@@ -4,7 +4,7 @@
 
 для запуска сервера с Linux/Mac OS:
   ~/Project │ main $ cd webintelligence
-  ~/Project/webintelligence │ main $ python manage.py runserver 
+  ~/Project/webintelligence │ main $ python3 manage.py runserver 
 
 В данном выводе нажмите на http ссылку с прожатым Ctrl:
   Watching for file changes with StatReloader
