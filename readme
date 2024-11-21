@@ -1,6 +1,10 @@
-для запуска сервера:
+для запуска сервера с Windows:
   ~/Project │ main $ cd webintelligence
-  ~/Project/webintelligence │ main $ python3 manage.py runserver
+  ~/Project/webintelligence │ main $ python manage.py runserver 
+
+для запуска сервера с Linux/Mac OS:
+  ~/Project │ main $ cd webintelligence
+  ~/Project/webintelligence │ main $ python manage.py runserver 
 
 В данном выводе нажмите на http ссылку с прожатым Ctrl:
   Watching for file changes with StatReloader
