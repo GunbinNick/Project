@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Академия развития интелекта</title>
+    <link type="text/css" href="{% static 'mainapp/css/platform.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="wrapper">  
+        <header class="container">
+            <nav>
+                <ul>
+                    <li class="btn"><a href="{% url 'about' %}">О нас</a></li>
+                    <li class="btn"><a href="{% url 'programs' %}">Программы</a></li>
+                    <li class="btn"><a href="/Events.html">События</a></li>
+                    <li class="btn"><a href="/News.html">Новости</a></li>
+                    <li class="btn"><a href="/Blog.html">Блог</a></li>
+                    <li class="btn"><a href="/Franch.html">Франшиза </a></li>
+                    <li class="btn"><a href="/Contacts.html">Контакты</a></li>
+                    <li class="btn"><a href="">Платформа</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main class="Itcity">
+        <!-- Новый блок с выбором игр -->
+        <div class="games-wrapper">
+            <div id="games" class="container">
+                <h3>Выберите игру</h3>
+                <div class="flex">
+                    <a href="{% url 'gameplat:numgame' %}" class="game-block">
+                        <h4>Найди пару</h4>
+                        <p>Игра, в которой нужно найти все пары одинаковых карточек.</p>
+                    </a>
+                    <a href="{% url 'gameplat:alphgame' %}" class="game-block">
+                        <h4>Найди букву в алфавите</h4>
+                        <p>Игра, в которой нужно найти букву в алфавите.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">Logo</span>
+                <p> Все права на товарный знак защищены. 
+                    Копирование материалов без согласия авторов проекта запрещено ИП Васильева Татьяна Игоревна ИНН 860324040540
+                    ОГРН 312860329300037</p>
+            </div>
+            <div>  
+                <h4> 8 922 795 06 40</h4>
+                <ul>
+                    <li>Онлайн</li>
+                    <li>Академия</li>
+                    <li>Робототехника</li>
+                    <li>Летний лагерь</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Договр оферты</li>
+                    <li>Политика конфиденциальности</li>
+                    <li>Государственная лицензия</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p>Сайт разработан ITCLAN - Digital Agency</p>
+    </footer>
+</body>
+
+</html>

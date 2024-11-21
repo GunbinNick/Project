@@ -9,3 +9,6 @@ def aboutapp(request):
 
 def programsapp(request):
     return render(request, 'mainapp/programs.html')
+
+def platformapp(request):
+    return render(request, 'mainapp/platform.html')
