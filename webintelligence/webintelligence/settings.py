@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 import os
 from pathlib import Path
-from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,8 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-oi$bj)+q2bgau4w^$-$$)6jn=+2+ov^^y8gqwab(esl@od_y9d'
-
+SECRET_KEY = ')e+*^yxn967o(^(d-&51-6r4s2kyku4j4)%a9))=6pg!$v+%d)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -78,13 +76,13 @@ WSGI_APPLICATION = 'webintelligence.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': config('DATABASE_NAME'),
-        # 'USER': config('DATABASE_USER'),
-        # 'PASSWORD': config('DATABASE_PASSWORD'),
-        # 'HOST': config('DATABASE_HOST', default='localhost'),
-        # 'PORT': config('DATABASE_PORT', default='5432'),
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "backend",
+        "USER": "postgres",
+        "PASSWORD": "rootroot",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
